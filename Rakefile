@@ -1,8 +1,4 @@
 #!/usr/bin/env rake
-before_script:
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-
 task :cucumber do
   ["rspec spec", "rake cucumber"].each do |cmd|
     puts "Starting to run #{cmd}..."
